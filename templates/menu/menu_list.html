@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Menu | Oceanico Sushi Bar{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/menu.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="menu-section">
+    <div class="container">
+        <h1 class="menu-title">Our Menu</h1>
+
+        <div class="menu-list">
+            {% for category, items in menu_items_by_category.items %}
+                <div class="menu-category">
+                    <h2 class="menu-category-title">{{ category.name }}</h2>
+                    <ul class="menu-items">
+                        {% for item in items %}
+                            <li class="menu-item">
+                                <div class="menu-item-content">
+                                    <h3 class="menu-item-title">{{ item.name }}</h3>
+                                    {% if item.description %}
+                                        <p class="menu-item-description">{{ item.description }}</p>
+                                    {% endif %}
+                                </div>
+                                <span class="menu-item-price">R$ {{ item.price|stringformat:"d"|floatformat:0 }}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

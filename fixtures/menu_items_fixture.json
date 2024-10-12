@@ -1,0 +1,542 @@
+[
+    {
+        "model": "menu.category",
+        "pk": 1,
+        "fields": {
+            "name": "Bebidas",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 2,
+        "fields": {
+            "name": "Sem \u00c1lcool",
+            "parent_category": 1
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 3,
+        "fields": {
+            "name": "Cervejas",
+            "parent_category": 1
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 4,
+        "fields": {
+            "name": "Caipirinhas",
+            "parent_category": 1
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 5,
+        "fields": {
+            "name": "Drinques",
+            "parent_category": 1
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 6,
+        "fields": {
+            "name": "Sake",
+            "parent_category": 1
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 7,
+        "fields": {
+            "name": "Aperitivos",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 8,
+        "fields": {
+            "name": "Da Nossa Cozinha",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 9,
+        "fields": {
+            "name": "Tempura",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 10,
+        "fields": {
+            "name": "Por\u00e7\u00f5es",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 11,
+        "fields": {
+            "name": "Yakissoba",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 12,
+        "fields": {
+            "name": "Temakis",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 13,
+        "fields": {
+            "name": "Joe",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 14,
+        "fields": {
+            "name": "Sushi",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 15,
+        "fields": {
+            "name": "Rolls",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 16,
+        "fields": {
+            "name": "Sashimi",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 17,
+        "fields": {
+            "name": "Combinados",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 18,
+        "fields": {
+            "name": "Combinados de Salm\u00e3o",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 19,
+        "fields": {
+            "name": "Robatas",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 20,
+        "fields": {
+            "name": "Poke",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.category",
+        "pk": 21,
+        "fields": {
+            "name": "Sobremesas",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 1,
+        "fields": {
+            "name": "MISSOSHIRO",
+            "description": "Sopa de miss\u00f4 com tofu e cebolinha",
+            "price": "20",
+            "category": 7,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 2,
+        "fields": {
+            "name": "SUNOMONO",
+            "description": "Saladinha com l\u00e2minas de pepino, kani e gergelim",
+            "price": "19",
+            "category": 7,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 3,
+        "fields": {
+            "name": "BOLINHO DE PEIXE",
+            "description": "Massa de peixe com cream cheese (6 UNIDADES)",
+            "price": "32",
+            "category": 7,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 4,
+        "fields": {
+            "name": "FRANGO GRELHADO",
+            "description": "Com legumes ou gohan ou yakimeshi",
+            "price": "49",
+            "category": 8,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 5,
+        "fields": {
+            "name": "PEIXE BRANCO GRELHADO",
+            "description": "Com legumes ou gohan ou yakimeshi",
+            "price": "59",
+            "category": 8,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 6,
+        "fields": {
+            "name": "CAMAR\u00c3O TEMPURA",
+            "description": "",
+            "price": "78",
+            "category": 9,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 7,
+        "fields": {
+            "name": "LEGUMES TEMPURA",
+            "description": "",
+            "price": "52",
+            "category": 9,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 8,
+        "fields": {
+            "name": "YAKISSOBA DE FRANGO",
+            "description": "",
+            "price": "51",
+            "category": 11,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 9,
+        "fields": {
+            "name": "YAKISSOBA DE CAMAR\u00c3O",
+            "description": "",
+            "price": "69",
+            "category": 11,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 10,
+        "fields": {
+            "name": "FRANGO ROBATA",
+            "description": "2 espetinhos grelhados em molho teriaky",
+            "price": "20",
+            "category": 19,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 11,
+        "fields": {
+            "name": "CARNE ROBATA",
+            "description": "",
+            "price": "29",
+            "category": 19,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 12,
+        "fields": {
+            "name": "SALM\u00c3O POKE",
+            "description": "",
+            "price": "55",
+            "category": 20,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 13,
+        "fields": {
+            "name": "CAMAR\u00c3O POKE",
+            "description": "",
+            "price": "46",
+            "category": 20,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 14,
+        "fields": {
+            "name": "ATUM TEMAKI",
+            "description": "",
+            "price": "35",
+            "category": 12,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 15,
+        "fields": {
+            "name": "CAMAR\u00c3O CROCANTE TEMAKI",
+            "description": "",
+            "price": "37",
+            "category": 12,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 16,
+        "fields": {
+            "name": "MOCHI SORVETE",
+            "description": "Bolinho de arroz com sorvete",
+            "price": "25",
+            "category": 21,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 17,
+        "fields": {
+            "name": "BANANA CARAMELIZADA",
+            "description": "Servida com sorvete de creme",
+            "price": "22",
+            "category": 21,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 18,
+        "fields": {
+            "name": "BATATA FRITA",
+            "description": "",
+            "price": "25",
+            "category": 10,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 19,
+        "fields": {
+            "name": "ARROZ GRELHADO",
+            "description": "",
+            "price": "15",
+            "category": 10,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 20,
+        "fields": {
+            "name": "JOE SALM\u00c3O",
+            "description": "Bolinho de arroz com salm\u00e3o e molho especial",
+            "price": "28",
+            "category": 13,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 21,
+        "fields": {
+            "name": "JOE ATUM",
+            "description": "Bolinho de arroz com atum e molho especial",
+            "price": "30",
+            "category": 13,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 22,
+        "fields": {
+            "name": "NIGIRI DE SALM\u00c3O",
+            "description": "",
+            "price": "12",
+            "category": 14,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 23,
+        "fields": {
+            "name": "NIGIRI DE ATUM",
+            "description": "",
+            "price": "14",
+            "category": 14,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 24,
+        "fields": {
+            "name": "PHILADELPHIA ROLL",
+            "description": "Salm\u00e3o, cream cheese, e cebolinha",
+            "price": "25",
+            "category": 15,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 25,
+        "fields": {
+            "name": "CALIFORNIA ROLL",
+            "description": "Kani, abacate, pepino",
+            "price": "22",
+            "category": 15,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 26,
+        "fields": {
+            "name": "SALM\u00c3O SASHIMI",
+            "description": "5 l\u00e2minas",
+            "price": "40",
+            "category": 16,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 27,
+        "fields": {
+            "name": "ATUM SASHIMI",
+            "description": "5 l\u00e2minas",
+            "price": "45",
+            "category": 16,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 28,
+        "fields": {
+            "name": "COMBINADO TRADICIONAL",
+            "description": "10 pe\u00e7as de sushi e 5 sashimis",
+            "price": "80",
+            "category": 17,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 29,
+        "fields": {
+            "name": "COMBINADO ESPECIAL",
+            "description": "20 pe\u00e7as variadas de sushi",
+            "price": "120",
+            "category": 17,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 30,
+        "fields": {
+            "name": "COMBINADO SALM\u00c3O SIMPLES",
+            "description": "10 pe\u00e7as de sushi de salm\u00e3o",
+            "price": "75",
+            "category": 18,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 31,
+        "fields": {
+            "name": "COMBINADO SALM\u00c3O ESPECIAL",
+            "description": "20 pe\u00e7as de sushi e sashimi de salm\u00e3o",
+            "price": "130",
+            "category": 18,
+            "quantity": "",
+            "is_vegetarian": false
+        }
+    }
+]

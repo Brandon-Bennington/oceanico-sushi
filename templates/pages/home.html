@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home | Oceanico Sushi Bar{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Oceanico Sushi Bar</h1>
+        <p>Experience the finest sushi and oceanic delicacies in a cozy atmosphere.</p>
+        <a href="/menu/" class="btn cta-btn">Explore Our Menu</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <div class="feature-grid">
+            <div class="feature-item">
+                <img src="{% static 'img/freshIngredients.png' %}" alt="Fresh Ingredients" class="feature-image">
+                <h3 class="feature-title">Fresh Ingredients</h3>
+                <p>We use only the freshest ingredients to ensure the best flavors in every bite.</p>
+            </div>
+            <div class="feature-item">
+                <img src="{% static 'img/cozyAtmosphere.png' %}" alt="Cozy Atmosphere" class="feature-image">
+                <h3 class="feature-title">Cozy Atmosphere</h3>
+                <p>Relax and enjoy your meal in our warm and inviting environment.</p>
+            </div>
+            <div class="feature-item">
+                <img src="{% static 'img/experiencedChefs.png' %}" alt="Experienced Chefs" class="feature-image">
+                <h3 class="feature-title">Experienced Chefs</h3>
+                <p>Our chefs bring years of traditional Japanese culinary experience to your table.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
