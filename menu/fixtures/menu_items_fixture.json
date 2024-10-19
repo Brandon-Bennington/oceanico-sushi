@@ -1,0 +1,1345 @@
+[
+    {
+      "model": "menu.category",
+      "pk": 1,
+      "fields": {
+        "name": "Aperitivos",
+        "parent_category": null,
+        "order": 1
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 2,
+      "fields": {
+        "name": "Da Nossa Cozinha",
+        "parent_category": null,
+        "order": 2
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 3,
+      "fields": {
+        "name": "Tempura",
+        "parent_category": null,
+        "order": 3
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 4,
+      "fields": {
+        "name": "Porções",
+        "parent_category": null,
+        "order": 4
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 5,
+      "fields": {
+        "name": "Yakissoba",
+        "parent_category": null,
+        "order": 5
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 6,
+      "fields": {
+        "name": "Temakis",
+        "parent_category": null,
+        "order": 6
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 7,
+      "fields": {
+        "name": "Joe",
+        "parent_category": null,
+        "order": 7
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 8,
+      "fields": {
+        "name": "Sushi",
+        "parent_category": null,
+        "order": 8
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 9,
+      "fields": {
+        "name": "Rolls",
+        "parent_category": null,
+        "order": 9
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 10,
+      "fields": {
+        "name": "Sashimi",
+        "parent_category": null,
+        "order": 10
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 11,
+      "fields": {
+        "name": "Combinados",
+        "parent_category": null,
+        "order": 11
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 12,
+      "fields": {
+        "name": "Combinados de Salmão",
+        "parent_category": null,
+        "order": 12
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 13,
+      "fields": {
+        "name": "Robatas",
+        "parent_category": null,
+        "order": 13
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 14,
+      "fields": {
+        "name": "Poke",
+        "parent_category": null,
+        "order": 14
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 15,
+      "fields": {
+        "name": "Bebidas",
+        "parent_category": null,
+        "order": 15
+      }
+    },
+    {
+      "model": "menu.category",
+      "pk": 16,
+      "fields": {
+        "name": "Sobremesas",
+        "parent_category": null,
+        "order": 16
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 1,
+      "fields": {
+        "name": "Missoshiro",
+        "description": "sopa de missô com tofu e cebolinha",
+        "price": "20.00",
+        "category": 1,
+        "quantity": null,
+        "is_vegetarian": true
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 2,
+      "fields": {
+        "name": "Sunomono",
+        "description": "saladinha com lâminas de pepino, kani e gergelim",
+        "price": "19.00",
+        "category": 1,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 3,
+      "fields": {
+        "name": "Bolinho de Peixe",
+        "description": "massa de peixe com cream cheese",
+        "price": "32.00",
+        "category": 1,
+        "quantity": "6 unidades",
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 4,
+      "fields": {
+        "name": "Harumaki de Legumes",
+        "description": "dupla de rolinhos de legumes",
+        "price": "20.00",
+        "category": 1,
+        "quantity": "2 unidades",
+        "is_vegetarian": true
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 5,
+      "fields": {
+        "name": "Harumaki de Camarão",
+        "description": "dupla de rolinhos de camarão com catupiry",
+        "price": "30.00",
+        "category": 1,
+        "quantity": "2 unidades",
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 6,
+      "fields": {
+        "name": "Guiosa",
+        "description": "pasteis chineses de carne de porco",
+        "price": "29.00",
+        "category": 1,
+        "quantity": "4 unidades",
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 7,
+      "fields": {
+        "name": "Guiosa Salmão",
+        "description": "pasteis chineses de salmão",
+        "price": "34.00",
+        "category": 1,
+        "quantity": "4 unidades",
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 8,
+      "fields": {
+        "name": "Guiosa de Berinjela",
+        "description": "pasteis chineses de berinjela",
+        "price": "26.00",
+        "category": 1,
+        "quantity": "4 unidades",
+        "is_vegetarian": true
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 9,
+      "fields": {
+        "name": "Ceviche",
+        "description": "cubos de peixe marinados em molho cítrico",
+        "price": "44.00",
+        "category": 1,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 10,
+      "fields": {
+        "name": "Ceviche Salmão",
+        "description": "cubos de salmão marinados em molho cítrico",
+        "price": "47.00",
+        "category": 1,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 11,
+      "fields": {
+        "name": "Edamame",
+        "description": "favas de soja cozidas",
+        "price": "28.00",
+        "category": 1,
+        "quantity": null,
+        "is_vegetarian": true
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 12,
+      "fields": {
+        "name": "Carpaccio",
+        "description": "laminas de salmão ou atum",
+        "price": "58.00",
+        "category": 1,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 13,
+      "fields": {
+        "name": "Pipoca de Camarão",
+        "description": "cubos de camarão no tempurá",
+        "price": "51.00",
+        "category": 1,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 14,
+      "fields": {
+        "name": "Pipoca de Couve-Flor",
+        "description": "couve-flor no tempurá",
+        "price": "36.00",
+        "category": 1,
+        "quantity": null,
+        "is_vegetarian": true
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 15,
+      "fields": {
+        "name": "Cogus",
+        "description": "shitake ou shimeji refogados no azeite",
+        "price": "42.00",
+        "category": 1,
+        "quantity": null,
+        "is_vegetarian": true
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 16,
+      "fields": {
+        "name": "Oceânico Tartar",
+        "description": "salmão ou atum temperado com azeite de trufa, raspas de limão, molho da casa, cebolinha, gergelim, servidos sobre o wakami",
+        "price": "63.00",
+        "category": 1,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 17,
+      "fields": {
+        "name": "Kakiague",
+        "description": "tempurá batata doce e cenoura",
+        "price": "31.00",
+        "category": 1,
+        "quantity": null,
+        "is_vegetarian": true
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 18,
+      "fields": {
+        "name": "Iscas de Peixe",
+        "description": null,
+        "price": "30.00",
+        "category": 1,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 19,
+      "fields": {
+        "name": "Frango Grelhado",
+        "description": "com legumes ou gohan ou yakimeshi",
+        "price": "49.00",
+        "category": 2,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 20,
+      "fields": {
+        "name": "Frango Empanado",
+        "description": "com legumes ou gohan ou yakimeshi",
+        "price": "53.00",
+        "category": 2,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 21,
+      "fields": {
+        "name": "Peixe Branco Grelhado",
+        "description": "com legumes ou gohan ou yakimeshi",
+        "price": "59.00",
+        "category": 2,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 22,
+      "fields": {
+        "name": "Peixe Empanado",
+        "description": "com legumes ou gohan ou yakimeshi",
+        "price": "61.00",
+        "category": 2,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 23,
+      "fields": {
+        "name": "Salmão Grelhado",
+        "description": "salmão grelhado com purê de batata e shimeji",
+        "price": "82.00",
+        "category": 2,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 24,
+      "fields": {
+        "name": "Salmão Crocante com Arroz de Limão",
+        "description": "salmão grelhado com crosta de amêndoas e arroz de limão",
+        "price": "89.00",
+        "category": 2,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 25,
+      "fields": {
+        "name": "Salmão Oceânico",
+        "description": "servido com molho de missô, arroz ou legumes",
+        "price": "91.00",
+        "category": 2,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 26,
+      "fields": {
+        "name": "Yakimeshi de Frutos do Mar",
+        "description": "arroz colorido com curry, frutos do mar ou legumes grelhados",
+        "price": "90.00",
+        "category": 2,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 27,
+      "fields": {
+        "name": "Hibacho de Frango",
+        "description": "file de frango com tempero oriental e arroz",
+        "price": "67.00",
+        "category": 2,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 28,
+      "fields": {
+        "name": "Hibacho de Carne",
+        "description": "file de carne ou frango com tempero oriental e arroz",
+        "price": "80.00",
+        "category": 2,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+      "model": "menu.menuitem",
+      "pk": 29,
+      "fields": {
+        "name": "Camarão",
+        "description": null,
+        "price": "78.00",
+        "category": 3,
+        "quantity": null,
+        "is_vegetarian": false
+      }
+    },
+    {
+        "model": "menu.menuitem",
+        "pk": 30,
+        "fields": {
+          "name": "Legumes",
+          "description": null,
+          "price": "52.00",
+          "category": 3,
+          "quantity": null,
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 31,
+        "fields": {
+          "name": "Mix",
+          "description": "mix de peixes, camarão e legumes",
+          "price": "76.00",
+          "category": 3,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 32,
+        "fields": {
+          "name": "Gohan",
+          "description": "arroz japonês",
+          "price": "18.00",
+          "category": 4,
+          "quantity": null,
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 33,
+        "fields": {
+          "name": "Yassay",
+          "description": "legumes da estação grelhados",
+          "price": "28.00",
+          "category": 4,
+          "quantity": null,
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 34,
+        "fields": {
+          "name": "Yakimeshi",
+          "description": "arroz colorido",
+          "price": "22.00",
+          "category": 4,
+          "quantity": null,
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 35,
+        "fields": {
+          "name": "Arroz de Shitake",
+          "description": null,
+          "price": "39.00",
+          "category": 4,
+          "quantity": null,
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 36,
+        "fields": {
+          "name": "Frango",
+          "description": null,
+          "price": "51.00",
+          "category": 5,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 37,
+        "fields": {
+          "name": "Carne",
+          "description": null,
+          "price": "59.00",
+          "category": 5,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 38,
+        "fields": {
+          "name": "Camarão",
+          "description": null,
+          "price": "69.00",
+          "category": 5,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 39,
+        "fields": {
+          "name": "Legumes",
+          "description": null,
+          "price": "39.00",
+          "category": 5,
+          "quantity": null,
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 40,
+        "fields": {
+          "name": "Cogumelos",
+          "description": null,
+          "price": "55.00",
+          "category": 5,
+          "quantity": null,
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 41,
+        "fields": {
+          "name": "Frutos do Mar",
+          "description": null,
+          "price": "71.00",
+          "category": 5,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 42,
+        "fields": {
+          "name": "Atum",
+          "description": null,
+          "price": "35.00",
+          "category": 6,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 43,
+        "fields": {
+          "name": "Califórnia",
+          "description": null,
+          "price": "29.00",
+          "category": 6,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 44,
+        "fields": {
+          "name": "Camarão Crocante",
+          "description": null,
+          "price": "37.00",
+          "category": 6,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 45,
+        "fields": {
+          "name": "Filadelfia",
+          "description": null,
+          "price": "37.00",
+          "category": 6,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 46,
+        "fields": {
+          "name": "Filadelfia S/Arroz",
+          "description": null,
+          "price": "43.00",
+          "category": 6,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 47,
+        "fields": {
+          "name": "Hot Filadelfia",
+          "description": null,
+          "price": "40.00",
+          "category": 6,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 48,
+        "fields": {
+          "name": "Salmão",
+          "description": null,
+          "price": "34.00",
+          "category": 6,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 49,
+        "fields": {
+          "name": "Salmão Skin",
+          "description": null,
+          "price": "30.00",
+          "category": 6,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 50,
+        "fields": {
+          "name": "Salmão S/Arroz",
+          "description": null,
+          "price": "41.00",
+          "category": 6,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 51,
+        "fields": {
+          "name": "Vegano (Tempurá de Legumes)",
+          "description": null,
+          "price": "30.00",
+          "category": 6,
+          "quantity": null,
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 52,
+        "fields": {
+          "name": "Shitake",
+          "description": null,
+          "price": "35.00",
+          "category": 6,
+          "quantity": null,
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 53,
+        "fields": {
+          "name": "Tartar de Salmão",
+          "description": null,
+          "price": "25.00",
+          "category": 7,
+          "quantity": "2 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 54,
+        "fields": {
+          "name": "Tartar de Salmão Maçaricado com Azeite de Trufa",
+          "description": null,
+          "price": "28.00",
+          "category": 7,
+          "quantity": "2 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 55,
+        "fields": {
+          "name": "Salmão com Cream Cheese",
+          "description": null,
+          "price": "25.00",
+          "category": 7,
+          "quantity": "2 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 56,
+        "fields": {
+          "name": "Salmão com Amêndoas",
+          "description": null,
+          "price": "27.00",
+          "category": 7,
+          "quantity": "2 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 57,
+        "fields": {
+          "name": "Camarão Crocante",
+          "description": null,
+          "price": "28.00",
+          "category": 7,
+          "quantity": "2 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 58,
+        "fields": {
+          "name": "Shimeji com Cream Cheese",
+          "description": null,
+          "price": "28.00",
+          "category": 7,
+          "quantity": "2 peças",
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 59,
+        "fields": {
+          "name": "Vegano",
+          "description": null,
+          "price": "27.00",
+          "category": 7,
+          "quantity": "2 peças",
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 60,
+        "fields": {
+          "name": "Atum",
+          "description": null,
+          "price": "17.00",
+          "category": 8,
+          "quantity": "2 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 61,
+        "fields": {
+          "name": "Polvo",
+          "description": null,
+          "price": "19.00",
+          "category": 8,
+          "quantity": "2 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 62,
+        "fields": {
+          "name": "Camarão",
+          "description": null,
+          "price": "19.00",
+          "category": 8,
+          "quantity": "2 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 63,
+        "fields": {
+          "name": "Salmão",
+          "description": null,
+          "price": "17.00",
+          "category": 8,
+          "quantity": "2 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 64,
+        "fields": {
+          "name": "Kani",
+          "description": null,
+          "price": "10.00",
+          "category": 8,
+          "quantity": "2 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 65,
+        "fields": {
+          "name": "Salmão Skin",
+          "description": null,
+          "price": "15.00",
+          "category": 8,
+          "quantity": "2 peças",
+          "is_vegetarian": false
+        }
+      },{
+        "model": "menu.menuitem",
+        "pk": 66,           
+        "fields": {
+          "name": "Califórnia",
+          "description": "kani, pepino e manga",
+          "price": "27.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 67,
+        "fields": {
+          "name": "Salmão Maki",
+          "description": "alga por fora, salmão e arroz",
+          "price": "33.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 68,
+        "fields": {
+          "name": "Hiromaki",
+          "description": "uramaki de salmão tradicional",
+          "price": "36.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 69,
+        "fields": {
+          "name": "Haru Hot",
+          "description": "salmão picado, cream cheese e massago na massa de harumaki",
+          "price": "40.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 70,
+        "fields": {
+          "name": "Salmão Skin",
+          "description": "uramaki de pele de salmão",
+          "price": "36.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 71,
+        "fields": {
+          "name": "Teka Maki",
+          "description": "atum e arroz",
+          "price": "32.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 72,
+        "fields": {
+          "name": "Spicy Tuna",
+          "description": "atum, molho picante e pepino",
+          "price": "32.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 73,
+        "fields": {
+          "name": "Filadélfia",
+          "description": "salmão com cream cheese e cebolinha",
+          "price": "33.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 74,
+        "fields": {
+          "name": "Hot Filadélfia",
+          "description": "empanado de salmão com cream cheese",
+          "price": "36.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 75,
+        "fields": {
+          "name": "Crocante",
+          "description": "hot roll empanado em flocos de cereal com tartar de salmão, atum",
+          "price": "41.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 76,
+        "fields": {
+          "name": "Oceânico Roll",
+          "description": "uramaki de camarão com cream cheese, envolto em fatias de salmão com geleia de pimenta e crispy de baroa",
+          "price": "45.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 77,
+        "fields": {
+          "name": "Ebiten",
+          "description": "camarão empanado com cebolinha",
+          "price": "36.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 78,
+        "fields": {
+          "name": "Ebiten Spicy",
+          "description": "camarão empanado, molho picante e abacate",
+          "price": "39.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 79,
+        "fields": {
+          "name": "Kappa Maki",
+          "description": "makimono de pepino",
+          "price": "23.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 80,
+        "fields": {
+          "name": "Ho'opika Roll",
+          "description": "salmão e abacate envoltos no arroz de massago",
+          "price": "51.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 81,
+        "fields": {
+          "name": "Veg Roll",
+          "description": "tempurá de legumes",
+          "price": "28.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 82,
+        "fields": {
+          "name": "Shimeji Crok Roll",
+          "description": "empanados em flocos de cereais cream cheese vegano e tartar de shimeji",
+          "price": "34.00",
+          "category": 9,
+          "quantity": null,
+          "is_vegetarian": true
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 83,
+        "fields": {
+          "name": "Salmão",
+          "description": null,
+          "price": "23.00",
+          "category": 10,
+          "quantity": "4 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 84,
+        "fields": {
+          "name": "Salmão",
+          "description": null,
+          "price": "42.00",
+          "category": 10,
+          "quantity": "8 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 85,
+        "fields": {
+          "name": "Salmão Maçaricado",
+          "description": null,
+          "price": "25.00",
+          "category": 10,
+          "quantity": "4 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 86,
+        "fields": {
+          "name": "Salmão Maçaricado",
+          "description": null,
+          "price": "46.00",
+          "category": 10,
+          "quantity": "8 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 87,
+        "fields": {
+          "name": "Barriga de Salmão Trufado",
+          "description": null,
+          "price": "28.00",
+          "category": 10,
+          "quantity": "4 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 88,
+        "fields": {
+          "name": "Barriga de Salmão Trufado",
+          "description": null,
+          "price": "52.00",
+          "category": 10,
+          "quantity": "8 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 89,
+        "fields": {
+          "name": "Atum",
+          "description": null,
+          "price": "23.00",
+          "category": 10,
+          "quantity": "4 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 90,
+        "fields": {
+          "name": "Atum",
+          "description": null,
+          "price": "42.00",
+          "category": 10,
+          "quantity": "8 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 91,
+        "fields": {
+          "name": "Peixe do Dia",
+          "description": null,
+          "price": "20.00",
+          "category": 10,
+          "quantity": "4 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 92,
+        "fields": {
+          "name": "Peixe do Dia",
+          "description": null,
+          "price": "36.00",
+          "category": 10,
+          "quantity": "8 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 93,
+        "fields": {
+          "name": "Polvo",
+          "description": null,
+          "price": "23.00",
+          "category": 10,
+          "quantity": "4 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 94,
+        "fields": {
+          "name": "Polvo",
+          "description": null,
+          "price": "44.00",
+          "category": 10,
+          "quantity": "8 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 95,
+        "fields": {
+          "name": "Bora",
+          "description": "5 Sushi (2 salmão, 1 atum, 1 peixe branco, 1 camarão) | 6 Sashimi (3 salmão e 3 atum) | 3 Haru Hot | 1 Joe",
+          "price": "84.00",
+          "category": 11,
+          "quantity": "15 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 96,
+        "fields": {
+          "name": "Atlântico",
+          "description": "8 Sashimi (4 atum e 4 peixe branco) | 4 Salmão Maki | 3 Joe",
+          "price": "84.00",
+          "category": 11,
+          "quantity": "15 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 97,
+        "fields": {
+          "name": "Ryu",
+          "description": "8 Sashimi (3 salmão, 3 atum, e 2 peixe branco) | 8 Rolls (4 spicy tuna e 4 hot) | 5 Sushi (2 salmão, 2 atum e 1 peixe branco) | 1 Joe",
+          "price": "97.00",
+          "category": 11,
+          "quantity": "22 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 98,
+        "fields": {
+          "name": "Mistral",
+          "description": "14 Sashimi (4 salmão, 5 atum e 5 peixe branco) 10 Sushi (2 kani, 2 camarão, 2 salmão, 2 atum, 2 peixe branco) 4 Joe | 4 Uramaki de Salmão | 4 Hot-Filadélfia",
+          "price": "154.00",
+          "category": 11,
+          "quantity": "36 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 99,
+        "fields": {
+          "name": "Oceânico",
+          "description": "20 Sashimi (5 salmão, 5 atum, 5 rost tuna, 5 peixe branco) 12 Makimonos (4 hot, 4 califórnias, 4 salmão maki) 10 Sushi (4 salmão, 4 atum, e 2 peixe branco) | 4 Joe",
+          "price": "193.00",
+          "category": 11,
+          "quantity": "46 peças",
+          "is_vegetarian": false
+        }
+      },
+      {
+        "model": "menu.menuitem",
+        "pk": 100,
+        "fields": {
+          "name": "Mediterrâneo",
+          "description": "26 Sashimi (10 salmão, 6 atum, 5 peixe branco, 5 polvo) 13 Sushi (3 salmão, 3 peixe branco, 3 atum, 2 camarão, 2 kani) 8 Hot -Filadélfia | 4 Califórnia | 4 Uramaki de Salmão | 3 Joe",
+          "price": "231.00",
+          "category": 11,
+          "quantity": "58 peças",
+          "is_vegetarian": false
+        }
+      }
+]

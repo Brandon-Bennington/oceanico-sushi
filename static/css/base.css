@@ -1,28 +1,23 @@
-/* Oceanico Sushi Bar - Base CSS 2024 */
+/* Oceanico Sushi Bar - Updated Base CSS 2024 */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@700&display=swap');
 
 :root {
-  --primary-color: #1a1a2e;
-  --secondary-color: #16213e;
-  --accent-color: #0f3460;
-  --text-color: #e94560;
-  --light-text: #f1f1f1;
-  --dark-text: #333;
+  --primary-color: #1c3d5a; /* Deep navy blue */
+  --secondary-color: #f4f4f4; /* Light gray */
+  --accent-color: #e0a800; /* Muted gold */
+  --text-color: #333333; /* Dark gray for main text */
+  --light-text: #ffffff; /* White */
+  --background-color: #ffffff; /* White */
+  --shadow-color: rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease-in-out;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.6;
-  color: var(--light-text);
-  background-color: var(--primary-color);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .container {
@@ -34,26 +29,21 @@ body {
 
 /* Navigation */
 .navbar {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 1rem 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px var(--shadow-color);
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--light-text);
   text-decoration: none;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: flex-end;
-  list-style-type: none;
 }
 
 .nav-link {
@@ -65,32 +55,21 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--text-color);
+  color: var(--accent-color);
 }
 
 /* Main Content */
 main {
-  margin-top: 80px; /* Adjust based on navbar height */
-  min-height: calc(100vh - 80px - 100px); /* Adjust for footer height */
+  margin-top: 80px;
+  min-height: calc(100vh - 80px - 100px);
 }
 
 /* Footer */
 footer {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: var(--light-text);
   padding: 2rem 0;
   text-align: center;
-}
-
-.social-links a {
-  color: var(--light-text);
-  margin: 0 10px;
-  font-size: 1.2rem;
-  transition: var(--transition);
-}
-
-.social-links a:hover {
-  color: var(--text-color);
 }
 
 /* Utility Classes */
@@ -98,29 +77,116 @@ footer {
   display: inline-block;
   padding: 0.8rem 1.5rem;
   background-color: var(--accent-color);
-  color: var(--light-text);
+  color: var(--primary-color);
   text-decoration: none;
   border-radius: 5px;
   transition: var(--transition);
+  font-weight: bold;
 }
 
 .btn:hover {
-  background-color: var(--text-color);
-  transform: translateY(-3px);
+  background-color: var(--primary-color);
+  color: var(--light-text);
 }
 
-.text-center {
-  text-align: center;
+/* Add this to your existing base.css */
+
+.nav-toggle {
+  display: none;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-toggle-label {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 1em;
+      height: 100%;
+      display: flex;
+      align-items: center;
+  }
+
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+      display: block;
+      background: white;
+      height: 2px;
+      width: 2em;
+      border-radius: 2px;
+      position: relative;
+  }
+
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+      content: '';
+      position: absolute;
+  }
+
+  .nav-toggle-label span::before {
+      bottom: 7px;
+  }
+
+  .nav-toggle-label span::after {
+      top: 7px;
+  }
+
   .navbar-nav {
-    flex-direction: column;
-    align-items: center;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: var(--primary-color);
+      width: 100%;
+      transform: scale(1, 0);
+      transform-origin: top;
+      transition: transform 0.3s ease-out;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .navbar-nav li {
+      margin-bottom: 1em;
+      margin-left: 1em;
   }
 
   .nav-link {
-    padding: 0.5rem 0;
+      opacity: 0;
+      transition: opacity 0.15s ease-out;
+  }
+
+  .nav-toggle:checked ~ .navbar-nav {
+      transform: scale(1, 1);
+  }
+
+  .nav-toggle:checked ~ .navbar-nav .nav-link {
+      opacity: 1;
+      transition: opacity 0.25s ease-out 0.15s;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .navbar-nav {
+      display: flex;
+  }
+
+  .navbar-nav li {
+      margin-left: 1em;
   }
 }

@@ -8,14 +8,23 @@
 {% endblock %}
 
 {% block content %}
-<section class="menu-section">
+<div class="menu-section">
     <div class="container">
         <h1 class="menu-title">Our Menu</h1>
 
+        <div class="category-tabs">
+            {% for category in categories %}
+                <button class="category-tab" data-category="{{ category.name|slugify }}">
+                    {{ category.name }}
+                </button>
+            {% endfor %}
+        </div>
+
         <div class="menu-list">
             {% for category, items in menu_items_by_category.items %}
-                <div class="menu-category">
+                <section class="menu-category" id="{{ category.name|slugify }}">
                     <h2 class="menu-category-title">{{ category.name }}</h2>
+                    
                     <ul class="menu-items">
                         {% for item in items %}
                             <li class="menu-item">
@@ -24,14 +33,51 @@
                                     {% if item.description %}
                                         <p class="menu-item-description">{{ item.description }}</p>
                                     {% endif %}
+                                    {% if item.quantity %}
+                                        <span class="item-quantity">{{ item.quantity }}</span>
+                                    {% endif %}
+                                    {% if item.is_vegetarian %}
+                                        <span class="vegetarian-label">Vegetarian</span>
+                                    {% endif %}
                                 </div>
-                                <span class="menu-item-price">R$ {{ item.price|stringformat:"d"|floatformat:0 }}</span>
+                                <span class="menu-item-price">R$ {{ item.price|floatformat:2 }}</span>
                             </li>
                         {% endfor %}
                     </ul>
-                </div>
+                </section>
             {% endfor %}
         </div>
     </div>
-</section>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.category-tab');
+    const menuCategories = document.querySelectorAll('.menu-category');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const categoryId = tab.getAttribute('data-category');
+            
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            menuCategories.forEach(category => {
+                if (category.id === categoryId) {
+                    category.style.display = 'block';
+                } else {
+                    category.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Activate the first tab by default
+    if (tabs.length > 0) {
+        tabs[0].click();
+    }
+});
+</script>
 {% endblock %}

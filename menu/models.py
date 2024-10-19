@@ -3,6 +3,11 @@ from django.db import models
 class Category(models.Model):
     name = models.CharField(max_length=100)
     parent_category = models.ForeignKey('self', on_delete=models.CASCADE, null=True, blank=True, related_name='subcategories')
+    order = models.IntegerField(default=0)
+
+    class Meta:
+        ordering = ['order', 'name']
+        verbose_name_plural = 'Categories'
 
     def __str__(self):
         if self.parent_category:

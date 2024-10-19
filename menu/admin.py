@@ -7,7 +7,6 @@ class MenuItemAdmin(admin.ModelAdmin):
     search_fields = ('name',)
 
     def get_full_category(self, obj):
-        # Display the full category structure, including subcategory if applicable
         if obj.category.parent_category:
             return f"{obj.category.parent_category.name} -> {obj.category.name}"
         return obj.category.name
@@ -15,13 +14,18 @@ class MenuItemAdmin(admin.ModelAdmin):
     get_full_category.short_description = 'Category'
 
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('name', 'parent_category', 'item_count')
+    list_display = ('name', 'parent_category', 'order', 'item_count')
+    list_filter = ('parent_category',)
     search_fields = ('name',)
+    ordering = ('order', 'name')  # This line ensures categories are ordered by 'order' field
     
     def item_count(self, obj):
-        return obj.menuitem_set.count()
+        return MenuItem.objects.filter(category=obj).count()
     item_count.short_description = 'Number of Items'
+
+    def get_queryset(self, request):
+        # Override the default queryset to order by 'order' field
+        return super().get_queryset(request).order_by('order', 'name')
 
 admin.site.register(MenuItem, MenuItemAdmin)
 admin.site.register(Category, CategoryAdmin)
-

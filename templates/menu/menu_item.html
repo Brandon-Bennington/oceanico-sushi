@@ -1,0 +1,15 @@
+<div class="menu-item">
+    <div class="item-header">
+        <h4 class="item-name">{{ item.name }}</h4>
+        <span class="item-price">R$ {{ item.price|floatformat:2 }}</span>
+    </div>
+    {% if item.description %}
+        <p class="item-description">{{ item.description }}</p>
+    {% endif %}
+    {% if item.quantity %}
+        <span class="item-quantity">{{ item.quantity }}</span>
+    {% endif %}
+    {% if item.is_vegetarian %}
+        <span class="vegetarian-label">Vegetarian</span>
+    {% endif %}
+</div>

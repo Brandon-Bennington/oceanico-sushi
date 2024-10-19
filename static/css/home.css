@@ -1,118 +1,127 @@
 /* Oceanico Sushi Bar - Home Page Styles 2024 */
 
 .hero {
-    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('/static/img/hero-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--light-text);
-  }
-  
-  .hero-content {
-    max-width: 800px;
-  }
-  
-  .hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    animation: fadeInDown 1s ease-out;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    animation: fadeInUp 1s ease-out 0.5s forwards;
-    opacity: 0;
-  }
-  
-  .cta-btn {
-    animation: fadeInUp 1s ease-out 1s forwards;
-    opacity: 0;
-  }
-  
-  .features {
-    padding: 5rem 0;
-  }
-  
-  .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-  }
-  
-  .feature-item {
-    text-align: center;
-    padding: 2rem;
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    transition: var(--transition);
-  }
-  
-  .feature-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .feature-icon {
-    font-size: 3rem;
-    color: var(--text-color);
-    margin-bottom: 1rem;
-  }
-  
-  .feature-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Animations */
-  @keyframes fadeInDown {
-    from {
+  background: linear-gradient(rgba(28, 61, 90, 0.7), rgba(28, 61, 90, 0.7)), url('/static/img/hero-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--light-text);
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+.cta-btn {
+  animation: fadeInUp 1s ease-out 1s forwards;
+  opacity: 0;
+}
+
+.features {
+  padding: 5rem 0;
+  background-color: var(--secondary-color);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  transition: var(--transition);
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px var(--shadow-color);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.feature-description {
+  color: var(--text-color);
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.feature-item:hover .feature-image {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
       opacity: 0;
       transform: translateY(-20px);
-    }
-    to {
+  }
+  to {
       opacity: 1;
       transform: translateY(0);
-    }
   }
-  
-  @keyframes fadeInUp {
-    from {
+}
+
+@keyframes fadeInUp {
+  from {
       opacity: 0;
       transform: translateY(20px);
-    }
-    to {
+  }
+  to {
       opacity: 1;
       transform: translateY(0);
-    }
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .hero h1 {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
       font-size: 2.5rem;
-    }
-  
-    .hero p {
-      font-size: 1rem;
-    }
-  
-    .feature-grid {
-      grid-template-columns: 1fr;
-    }
   }
 
-  .feature-image {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    transition: var(--transition);
+  .hero p {
+      font-size: 1rem;
   }
-  
-  .feature-item:hover .feature-image {
-    transform: scale(1.1);
+
+  .feature-grid {
+      grid-template-columns: 1fr;
   }
+}
