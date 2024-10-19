@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Oceanico Sushi Bar{% endblock %}</title>
-    <meta name="description" content="Experience the finest sushi and Japanese cuisine at Oceanico Sushi Bar in Rio de Janeiro.">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% block extra_css %}{% endblock %}
-    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -23,6 +20,8 @@
                 <ul class="navbar-nav">
                     <li><a href="{% url 'home' %}" class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a></li>
                     <li><a href="{% url 'menu:list' %}" class="nav-link {% if request.resolver_match.url_name == 'list' %}active{% endif %}">Menu</a></li>
+                    <li><a href="{% url 'about' %}" class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a></li>
+                    <li><a href="{% url 'contact' %}" class="nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -43,7 +42,6 @@
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
     {% block extra_js %}{% endblock %}
 </body>
 </html>

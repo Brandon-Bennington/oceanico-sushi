@@ -1,0 +1,46 @@
+/* About Page Styles */
+
+.about-section {
+    padding: 4rem 0;
+    background-color: var(--background-color);
+}
+
+.about-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.about-image {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+}
