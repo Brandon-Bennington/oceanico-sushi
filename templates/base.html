@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Oceanico Sushi Bar{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     {% block extra_css %}{% endblock %}
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="container">
-                <a href="{% url 'home' %}" class="navbar-brand">Oceanico Sushi Bar</a>
+                <a href="{% url 'home' %}" class="navbar-brand">
+                    <img src="{% static 'img/oceanicoWhiteNoBG.png' %}" alt="Oceanico Sushi Bar" class="navbar-logo">
+                </a>
                 <input type="checkbox" id="nav-toggle" class="nav-toggle">
                 <label for="nav-toggle" class="nav-toggle-label">
                     <span></span>
@@ -22,6 +25,8 @@
                     <li><a href="{% url 'menu:list' %}" class="nav-link {% if request.resolver_match.url_name == 'list' %}active{% endif %}">Menu</a></li>
                     <li><a href="{% url 'about' %}" class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a></li>
                     <li><a href="{% url 'contact' %}" class="nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a></li>
+                    <li><a href="{% url 'blog:blog_list' %}" class="nav-link {% if request.resolver_match.namespace == 'blog' %}active{% endif %}">Blog</a></li>
+                    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
                 </ul>
             </div>
         </nav>
@@ -33,11 +38,17 @@
 
     <footer>
         <div class="container">
-            <p>&copy; {% now "Y" %} Oceanico Sushi Bar. All Rights Reserved.</p>
-            <div class="social-links">
-                <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-                <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <div class="footer-content">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/oceanico.sushibar" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/21990695304" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <a href="{% url 'contact' %}" class="join-team">Come Join Our Team</a>
+                <p class="copyright">&copy; {% now "Y" %} Oceanico Sushi Bar. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
